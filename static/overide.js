@@ -7,12 +7,12 @@ function overrideKeyboardEvent(e){
     case "keydown":
       if(!keyIsDown[e.keyCode]){
         keyIsDown[e.keyCode] = true;
-        // do key down stuff here
+        alert("Pressed "+e.keyCode);
       }
     break;
     case "keyup":
       delete(keyIsDown[e.keyCode]);
-      // do key up stuff here
+      alert("Let go of "+e.keyCode);
     break;
   }
   disabledEventPropagation(e);
