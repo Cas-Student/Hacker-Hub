@@ -5,7 +5,6 @@ import { createBareServer } from '@tomphttp/bare-server-node'
 import path from 'node:path'
 import cors from 'cors'
 import config from './config.js'
-import users from 'https://grass-grower.github.io/Proxy-Users/Users.js'
 const __dirname = process.cwd()
 const server = http.createServer()
 const app = express(server)
