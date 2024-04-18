@@ -269,7 +269,7 @@ function AB() {
   }
 
   if (!inFrame && !navigator.userAgent.includes('Firefox')) {
-    const popup = open('about:blank', '_blank')
+    const popup = open('about:blank', '_self')
     if (!popup || popup.closed) {
       alert('Please allow popups and redirects.')
     } else {
@@ -289,7 +289,7 @@ function AB() {
       style.width = style.height = '100%'
       doc.head.appendChild(link)
       doc.body.appendChild(iframe)
-      location.replace('https://classroom.google.com')
+      window.close()
     }
   }
 }
