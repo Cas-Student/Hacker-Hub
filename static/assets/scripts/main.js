@@ -39,7 +39,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const icon = document.getElementById('tab-favicon')
   const name = document.getElementById('tab-title')
   var selectedValue = localStorage.getItem('selectedOption')
-  if (selectedValue === 'Google') {
+  if (selectedValue === 'School') {
+    icon.setAttribute('href','/assets/media/favicon/hcps.png')
+    name.textContent = 'start.hcps.org'
+    localStorage.setItem('name', 'start.hcps.org')
+    localStorage.setItem('icon', '/assets/media/favicon/hcps.png')
+  } else if (selectedValue === 'Google') {
     icon.setAttribute('href', '/assets/media/favicon/google.png')
     name.textContent = 'Google'
     localStorage.setItem('name', 'Google')
