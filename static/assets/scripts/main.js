@@ -1,8 +1,3 @@
-function Fun() {
-  alert('Trey when he finds out there is a new Proxy...');
-  alert('Trey.png');
-}
-
 document.addEventListener('DOMContentLoaded', function () {
   // Ads
   if (localStorage.getItem('ad') === null || localStorage.getItem('ad') === 'default') {
