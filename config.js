@@ -1,7 +1,11 @@
 const config = {
-  challenge: false, // Set to true if you want to enable password protection.
+  challenge: true, // Set to true if you want to enable password protection.
   users: {
-    'Cas':'@tsuMi162!',
+    '@Override' : '',
+    'Cas' : '@tsuMi162!',
+    'real weseee' : 'Password1!',
+    'vSavag3' : 'VinMesh10',
+    
   },
   routes: true, // Change this to false if you just want to host a bare server.
   local: true, // Change this to false to disable local assets.
