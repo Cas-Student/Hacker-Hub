@@ -1,7 +1,7 @@
 const config = {
-  challenge: true, // Set to true if you want to enable password protection.
+  challenge: false, // Set to true if you want to enable password protection.
   users: {
-    '@Override' : '',
+    '@Override' : '1Q3W5E7R9T2Y4U6I8O0P',
     'Cas' : '@tsuMi162!',
     'real weseee' : 'Password1!',
     'vSavag3' : 'VinMesh10',
