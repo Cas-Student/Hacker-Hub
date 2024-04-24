@@ -6,6 +6,12 @@
     "custom": "true"
   },
   {
+    "name": "Crazy Games",
+    "link": "https://crazygames.com"
+    "image": "/assets/media/icons/crazygames.webp"
+    "categories": ["all","game"]
+  },
+  {
     "name": "Amazon",
     "link": "https://amazon.com/",
     "image": "/assets/media/icons/amazon.webp",
