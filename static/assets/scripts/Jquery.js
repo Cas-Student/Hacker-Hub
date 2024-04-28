@@ -1,3 +1,0 @@
-$(function() {
-  $("#img-box").dialog();
-});
