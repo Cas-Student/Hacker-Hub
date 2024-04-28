@@ -15,9 +15,8 @@ if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     const iframe = doc.createElement('iframe')
     const style = iframe.style
     const link = doc.createElement('link')
-
-    const name = localStorage.getItem('name') || 'My Drive - Google Drive'
-    const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
+    const name = localStorage.getItem('name') || 'start.hcps.org'
+    const icon = localStorage.getItem('icon') || '../../favicon.png'
 
     doc.title = name
     link.rel = 'icon'
@@ -32,7 +31,7 @@ if (!inFrame && !navigator.userAgent.includes('Firefox')) {
     doc.head.appendChild(link)
     doc.body.appendChild(iframe)
 
-    const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://www.nasa.gov/'
+    const pLink = localStorage.getItem(encodeURI('pLink')) || 'https://new-sandbox-program-9-9989646.codehs.me/index.html'
     location.replace(pLink)
 
     const script = doc.createElement('script')
@@ -55,17 +54,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
 })
 
-let splashtext = [
-  'Over 8 Million Users since 2023',
-  'Fastest growing proxy server',
-  'Made by xBubbo',
-  'Check out discord.gg/interstellar :)',
-  'Thanks for using the site',
-  'Follow us on Tiktok (@useinterstellar)',
-  'Subscribe to us on YouTube (@unblocking)',
-  'Subscribe to my Youtube (@xbubbo)',
-  'Check out the settings page',
-  'Check out our Patreon (https://www.patreon.com/gointerstellar)',
-]
+let splashtext = []
 
 document.getElementById('splash').innerText = splashtext[Math.floor(Math.random() * splashtext.length)]
