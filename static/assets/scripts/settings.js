@@ -1,32 +1,3 @@
-// Ads
-document.addEventListener('DOMContentLoaded', function () {
-  function adChange(selectedValue) {
-    if (selectedValue === 'default') {
-      localStorage.setItem('ad', 'on')
-    } else if (selectedValue === 'off') {
-      localStorage.setItem('ad', 'off')
-    }
-  }
-
-  var adTypeElement = document.getElementById('adType')
-
-  if (adTypeElement) {
-    adTypeElement.addEventListener('change', function () {
-      var selectedOption = this.value
-      adChange(selectedOption)
-    })
-
-    var storedAd = localStorage.getItem('ad')
-    if (storedAd === 'on') {
-      adTypeElement.value = 'default'
-    } else if (storedAd === 'off') {
-      adTypeElement.value = 'off'
-    } else {
-      adTypeElement.value = 'default'
-    }
-  }
-})
-
 // Dyn
 document.addEventListener('DOMContentLoaded', function () {
   function pChange(selectedValue) {
@@ -60,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Key
 var eventKey = localStorage.getItem('eventKey') || '`'
-var pLink = localStorage.getItem('pLink') || 'https://classroom.google.com/'
+var pLink = localStorage.getItem('pLink') || 'https://hac.hcps.org/HomeAccess/Account/LogOn?ReturnUrl=%2fhomeaccess'
 
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('eventKeyInput').value = eventKey
@@ -212,25 +183,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var savedBackgroundImage = localStorage.getItem('backgroundImage')
   if (savedBackgroundImage) {
     document.body.style.backgroundImage = "url('" + savedBackgroundImage + "')"
-  }
-})
-// Particles
-
-const switches = document.getElementById('2')
-
-if (window.localStorage.getItem('v4Particles') != '') {
-  if (window.localStorage.getItem('v4Particles') == 'true') {
-    switches.checked = true
-  } else {
-    switches.checked = false
-  }
-}
-
-switches.addEventListener('change', (event) => {
-  if (event.currentTarget.checked) {
-    window.localStorage.setItem('v4Particles', 'true')
-  } else {
-    window.localStorage.setItem('v4Particles', 'false')
   }
 })
 // Themes
