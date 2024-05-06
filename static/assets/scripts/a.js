@@ -61,6 +61,7 @@ function setPin(index) {
     pins.push(index)
   }
   localStorage.setItem('Apinned', pins)
+  alert(pins); //For Developing reasons.
   location.reload()
 }
 
