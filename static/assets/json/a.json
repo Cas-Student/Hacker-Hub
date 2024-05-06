@@ -9,7 +9,8 @@
     "name": "Pornhub",
     "link": "http://pornhub.com",
     "image": "/assets/media/icons/pornhub.webp",
-    "categories": ["all"]
+    "categories": ["all"],
+    "Apinned": [33]
   },
   {
     "name": "Amazon",
